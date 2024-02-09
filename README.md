@@ -27,5 +27,13 @@ Leveraging the decentralized nature of blockchain technology, VoteChain delivers
 Designed to accommodate a large number of voters while maintaining accessibility and usability, VoteChain promotes inclusivity and democratic participation. Its scalable architecture ensures that the system can handle varying voting loads without compromising performance or reliability, thereby enhancing the overall voting experience for all stakeholders.
 
 ## Installation and Setup
+.. in progress
 
-1. Clone the repository:
+
+# License
+
+This project is licensed under the [MIT License](LICENSE), granting users the freedom to use, modify, and distribute the software as they see fit, with minimal restrictions.
+
+## Contact Us
+
+For questions, feedback, or collaboration opportunities, please don't hesitate to reach out to our team at i@ashutosh7i.dev We value your input and look forward to hearing from you!
