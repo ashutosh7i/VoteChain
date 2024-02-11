@@ -12,24 +12,22 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/page1",
+    path: "/Page1",
     element: <Page1 />,
   },
   {
-    path: "/page2",
+    path: "/Page2",
     element: <Page2 />,
   },
   {
-    path: "/page3",
+    path: "/Page3",
     element: <Page3 />,
   },
 ]);
 
 const rootElement = document.getElementById("root");
 ReactDOM.createRoot(rootElement).render(
-  <React.StrictMode>
-    <ChakraProvider>
-      <RouterProvider router={router} />
-    </ChakraProvider>
-  </React.StrictMode>
+  <ChakraProvider>
+    <RouterProvider router={router} />
+  </ChakraProvider>
 );

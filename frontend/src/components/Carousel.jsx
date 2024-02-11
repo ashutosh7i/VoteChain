@@ -4,19 +4,19 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 const Carousel = () => {
   const slides = [
     {
-      img: "https://images.pexels.com/photos/2599537/pexels-photo-2599537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      img: "../assest/Carousel1.png",
     },
     {
-      img: "https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      img: "../assest/Carousel2.png",
     },
     {
-      img: "https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      img: "../assest/Carousel3.png",
     },
     {
-      img: "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      img: "../assest/Carousel4.png",
     },
     {
-      img: "https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      img: "../assest/Carousel5.png",
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -43,19 +43,19 @@ const Carousel = () => {
   }, [slidesCount]);
   return (
     <Flex
-      w="70%"
-      bg="#edf3f8"
+      width={"50%"}
+      bg="white"
       _dark={{
         bg: "#3e3e3e",
       }}
-      p={10}
+      p={2}
       alignItems="center"
       justifyContent="center"
     >
       <Flex w="full" overflow="hidden">
-        <Flex pos="relative" h="400px" w="full" {...carouselStyle}>
+        <Flex pos="relative" h="600px" w="full" {...carouselStyle}>
           {slides.map((slide, sid) => (
-            <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
+            <Box key={`slide-${sid}`} flex="none" boxSize="full">
               <Text
                 color="white"
                 fontSize="xs"
@@ -71,6 +71,7 @@ const Carousel = () => {
                 alt="carousel image"
                 boxSize="full"
                 backgroundSize="cover"
+                objectFit={"contain"}
               />
             </Box>
           ))}

@@ -1,40 +1,54 @@
-import { Box, Flex, Spacer, Link, Button, Center } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Link, Image } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <Box py={7} px={8} color="black" boxShadow={"3px 0.5px 1px gray"}>
-      <Flex alignItems="center" justifyContent="center">
-        <Link href="/" fontSize="2xl" fontWeight="bold" fontFamily={"Poppins"}>
-          VoteChain
+    <Box
+      py={3}
+      px={8}
+      color="black"
+      boxShadow={"3px 0.5px 1px gray"}
+      // border={"1px solid #e2e8f0"}
+      position={"fixed"}
+      width={"100%"}
+      zIndex={1}
+      backdropFilter={"blur(10px)"}
+      top={0}
+    >
+      <Flex alignItems="center" justifyContent="center" p={4}>
+        <Link href="/">
+          <Image src="../assest/vote-chain logo.png" width={"70px"} />
         </Link>
         <Spacer />
         <Flex alignItems="center" justifyContent="center" mr={"10"}>
           <Link
-            href="/page1"
+            href="/Elections"
             mr={4}
-            fontSize={"xl"}
-            fontFamily={"Poppins"}
-            fontWeight={"semi-bold"}
-            px={4}
+            fontSize={"30px"}
+            fontFamily={"Helvetica"}
+            fontWeight={"bold"}
+            px={7}
+            textDecoration={"none"}
           >
             Elections
           </Link>
           <Link
-            href="/page2"
+            href="/Explorer"
             mr={4}
-            fontSize={"xl"}
-            fontFamily={"Poppins"}
-            fontWeight={"semi-bold"}
-            px={4}
+            fontSize={"30px"}
+            fontFamily={"Helvetica"}
+            fontWeight={"bold"}
+            px={7}
+            textDecoration={"none"}
           >
             Explorer
           </Link>
           <Link
-            href="/page3"
-            fontSize={"xl"}
-            fontFamily={"Poppins"}
-            fontWeight={"semi-bold"}
-            px={4}
+            href="/Toll-Free"
+            fontSize={"30px"}
+            fontFamily={"Helvetica"}
+            fontWeight={"bold"}
+            px={7}
+            textDecoration={"none"}
           >
             Toll-Free
           </Link>
