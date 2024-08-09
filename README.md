@@ -1,5 +1,7 @@
 # VoteChain
 
+![image of votechain](https://repository-images.githubusercontent.com/755289465/a69e77a8-5a25-47a2-aaa2-7fd6494ed45a)
+
 *Building Trust in Elections through Blockchain*
 
 VoteChain is an innovative voting system designed to modernize and secure the democratic process using blockchain, IOT and RFID technologies. By leveraging these cutting-edge tools, VoteChain ensures transparency, security, and efficiency in elections, ultimately enhancing trust and participation in the electoral system.
