@@ -1,12 +1,12 @@
 const { Vonage } = require('@vonage/server-sdk')
 
 const vonage = new Vonage({
-  apiKey: "dc32a1c8",
-  apiSecret: "xXGM7eZLqFDNqB07"
+  apiKey: "key",
+  apiSecret: "secret"
 })
 
 const from = "Vonage APIs"
-const to = "918717941241"
+const to = "91number"
 const text = 'A text message sent using the Vonage SMS API'
 
 async function sendSMS() {
